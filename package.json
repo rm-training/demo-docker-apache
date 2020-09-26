@@ -1,0 +1,13 @@
+{
+  "name": "docker-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "apache": "echo 'Visit http://localhost:8080' && docker run -ti -v \"$PWD\":/usr/local/apache2/htdocs/ -p 8080:80 httpd:2.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
